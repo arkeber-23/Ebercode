@@ -1,0 +1,289 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, Times, serif;
+  background-color: #ffff;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin: 0;
+}
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+.contenedor p {
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.menu-icon{
+  display: none;
+}
+
+.foto-fondo {
+  background-image: url(../img/foto.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  border-radius: 8px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.sobre-mi {
+  min-height: 1px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgba(255, 255, 255, 0.692);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.596);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.sobre-mi-foto {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  float: left;
+  margin: 10px;
+}
+.un-poco-mas {
+  line-height: 1.4em;
+  margin: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+.sobre-mi p {
+  top: 0;
+  text-align: justify;
+  font-size: 30px;
+  margin: 10px;
+  line-height: 1.3em;
+}
+.sobre-mi img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.header {
+  background: #09010e;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nombre {
+  letter-spacing: 15px;
+  font-size: 30px;
+}
+
+.navegador ul li {
+  display: inline-block;
+}
+.navegador ul li a {
+  display: block;
+  padding: 4px 4px;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+.navegador ul li a:hover {
+  background: #cccc;
+}
+.main {
+  padding-top: 5rem;
+}
+
+.habilidades {
+  font-family: Helvetica;
+  color: rgba(255, 255, 255, 0.911);
+  background: #291e30;
+  margin-top: 4rem;
+  padding: 1px 0;
+}
+.habilidades ul {
+  text-align: center;
+}
+.habilidades li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.habilidades-aprender {
+  font-family: Helvetica;
+  color: white;
+  background: #1c1222;
+  padding: 1px 0;
+}
+
+.habilidades-aprender ul {
+  text-align: center;
+}
+.habilidades-aprender li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.footer {
+  background: #09010e;
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  text-align: center;
+}
+.footer a {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 710px) {
+
+  h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+  }
+  .navegador{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navegador ul {
+    display: none;
+  }
+  .navegador ul.show {
+    display: block;
+  }
+
+  .navegador ul li {
+    display: block;
+  }
+
+  .navegador ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+  .foto-fondo {
+    background-image: url(../img/foto.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 4px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .sobre-mi {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.692);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.596);
+    border-radius: 4px;
+  }
+  .sobre-mi-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 5px;
+  }
+  .un-poco-mas {
+    line-height: 1.1em;
+    margin: 2px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+  }
+  .sobre-mi p {
+    top: 0;
+    text-align: left;
+    font-size: 18px;
+    margin: 5px;
+    line-height: 1.1em;
+  }
+
+  .header {
+    background: #09010e;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nombre {
+    letter-spacing: 10px;
+    font-size: 15px;
+  }
+
+  .navegador ul li a:hover {
+    background: #cccc;
+  }
+  .main {
+    padding-top: 2rem;
+  }
+
+  .habilidades {
+    font-family: Helvetica;
+    color: rgba(255, 255, 255, 0.911);
+    background: #291e30;
+    margin-top: 2rem;
+    padding: 1px 0;
+  }
+  .habilidades li {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+  }
+
+  .habilidades-aprender li {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+  }
+
+  .footer {
+    background: #09010e;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    text-align: center;
+  }
+}
