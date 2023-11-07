@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+  - export DEPLOY_DIR=/home/ebercode/test.ebercode.com
+  - /bin/cp -r ./* $DEPLOY_DIR
